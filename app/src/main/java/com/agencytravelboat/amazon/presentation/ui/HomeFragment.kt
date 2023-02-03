@@ -1,4 +1,4 @@
-package com.agencytravelboat.myapplic.presentation.ui
+package com.agencytravelboat.amazon.presentation.ui
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.agencytravelboat.myapplic.R
+import com.agencytravelboat.amazon.R
 
 class HomeFragment : Fragment() {
 

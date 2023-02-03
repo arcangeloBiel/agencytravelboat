@@ -1,4 +1,4 @@
-package com.agencytravelboat.myapplic.presentation.ui
+package com.agencytravelboat.amazon.presentation.ui
 
 import androidx.lifecycle.ViewModel
 

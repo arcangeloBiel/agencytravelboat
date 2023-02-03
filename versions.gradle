@@ -1,0 +1,31 @@
+ext {
+    //versions
+    androidCompileSdkVersion = 33
+    androidMinSdkVersion = 23
+    androidTargetSdkVersion = 33
+    androidVersionCode = 1
+    androidVersionName = "1.0.0"
+
+    coreKtx = "1.7.0"
+    appCompat = "1.4.1"
+    material = "1.5.0"
+    collectionktx = "1.2.0"
+    navigation = "2.3.5"
+    constraintlayout = "2.0.4"
+    koin = "3.1.5"
+    gson = "2.8.9"
+    okhttp = "4.9.3"
+    retrofit = "2.9.0"
+    retrofitcoroutine = "0.9.2"
+    fragment = "1.2.5"
+    room = "2.4.1"
+    jwt ="2.0.0"
+
+    louiscad = "3.0.0-alpha06"
+    progressbutton = "2.1.0"
+
+    firebasebom = "28.4.0"
+    firebaseauth = "19.2.0"
+    firebaseanalytics = "17.2.2"
+
+}

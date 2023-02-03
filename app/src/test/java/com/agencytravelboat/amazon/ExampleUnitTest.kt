@@ -1,4 +1,4 @@
-package com.agencytravelboat.myapplic
+package com.agencytravelboat.amazon
 
 import org.junit.Test
 

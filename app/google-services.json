@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "159045855766",
+    "project_id": "trip-eed0a",
+    "storage_bucket": "trip-eed0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159045855766:android:511bf9b35fc4e2ee092337",
+        "android_client_info": {
+          "package_name": "com.agencytravelboat.amazon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159045855766-c8eqc7b84een8tfn85pq3k5a0qaokqrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC79eCkEXZ2PoGHYknnh5O5m7kmc-qwD8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159045855766-c8eqc7b84een8tfn85pq3k5a0qaokqrl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

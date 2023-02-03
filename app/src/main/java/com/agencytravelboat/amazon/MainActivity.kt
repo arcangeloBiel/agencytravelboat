@@ -1,4 +1,4 @@
-package com.agencytravelboat.myapplic
+package com.agencytravelboat.amazon
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

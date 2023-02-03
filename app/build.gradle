@@ -1,47 +1,55 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    //id 'com.android.library'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    
 }
 
 android {
     namespace 'com.agencytravelboat.myapplic'
-    compileSdk 33
 
     defaultConfig {
         applicationId "com.agencytravelboat.myapplic"
-        minSdk 24
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
     }
 }
 
+apply from: "$rootProject.projectDir/dependencias.gradle"
+
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.6.0'
-    implementation 'com.google.android.material:material:1.8.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    def libs = rootProject.ext.libs
+    implementation libs.corektx
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.navigationui
+    implementation libs.navigationfragment
+    implementation libs.constraintlayout
+    implementation libs.koinviewmodel
+    implementation libs.gson
+    implementation libs.okhttpbom
+    implementation libs.okhttp
+    implementation libs.okhttplogging
+    implementation libs.retrofit
+    implementation libs.retrofitScalars
+    implementation libs.retrofitconverter
+    implementation libs.retrofitcoroutine
+    implementation libs.fragment
+    implementation libs.room
+    implementation libs.roomRuntime
+    implementation libs.jwt
+    implementation libs.louiscad
+    implementation libs.louiscadSystem
+    implementation libs.progressbutton
+    kapt(libs.roomCompiler)
+
+    // Google Services
+    implementation platform(libs.firebasebom)
+    implementation libs.firebaseauth
+    implementation libs.firebaseanalytics
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
 }
